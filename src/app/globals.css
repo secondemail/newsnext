@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  direction: rtl;
+
+}
+body{
+  background-color: #f8f9fa;
+}
+
+
+.accordion-button::after{
+  position: absolute;
+  left: 10px;
+}
+
+.asd{
+  background-image: url('../../public/qw.jpg');
+  background-color: #3675ba;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form-floating>label {
+  left: unset;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-position: left calc(.375em + .1875rem) center;
+}
