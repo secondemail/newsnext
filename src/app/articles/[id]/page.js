@@ -5,12 +5,10 @@ import { Container, Row,Badge } from 'react-bootstrap'
 import { IoTimer } from 'react-icons/io5'
 import avatar from '../../../../public/ew.jpg'
 import db from "../../../../public/api/db.json"
-import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { IoArrowRedoCircleSharp } from "react-icons/io5";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 
 
-const articles = ({params}) => {
+const Articles = ({params}) => {
   const [arData,setArData]=useState([])
   useEffect(()=>{
     setArData(db.news.filter(ar=>ar.id===params.id))
@@ -101,4 +99,4 @@ const articles = ({params}) => {
   )
 }
 
-export default articles
+export default Articles
